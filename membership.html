@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="gymlogo.png" alt="KC Fitness Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="creativity.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-page">
+        <div class="title-container">
+            <div class="call-to-action">
+                <h1>Join KC Fitness</h1>
+            </div>
+        </div>
+        <!-- Countdown Timer Section -->
+        <div id="countdown" class="countdown-container">
+            <h2>Special Automatic 10% Off The Price Offer!</h2>
+            <p>Time left to take advantage of the discounted offer:</p>
+            <div id="timer">
+                <span id="days">00</span>D :
+                <span id="hours">00</span>H :
+                <span id="minutes">00</span>M :
+                <span id="seconds">00</span>S
+            </div>
+        </div>
+
+        <!-- Membership Pricing Table -->
+        <section id="membership-pricing">
+            <h2>Membership Pricing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Membership Tier</th>
+                        <th>Plan</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>Monthly</td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Basic</td>
+                        <td>Annually</td>
+                        <td>$239.88</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Monthly</td>
+                        <td>$49.99</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Annually</td>
+                        <td>$599.88</td>
+                    </tr>
+                    <tr>
+                        <td>Ultimate</td>
+                        <td>Monthly</td>
+                        <td>$99.99</td>
+                    </tr>
+                    <tr>
+                        <td>Ultimate</td>
+                        <td>Annually</td>
+                        <td>$1199.88</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Membership Form Section -->
+        <div class="form-container">
+            <form id="membershipForm">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="age">Age: <span class="required">*</span></label>
+                <input type="number" id="age" name="age" min="18" required>
+    
+                <label for="tier">Membership Tier:</label>
+                <select id="tier" name="tier">
+                    <option value="">-- Select a Tier --</option>
+                    <option value="basic">Basic - $19.99/month</option>
+                    <option value="premium">Premium - $49.99/month</option>
+                    <option value="ultimate">Ultimate - $99.99/month</option>
+                </select>
+                <p id="tierPriceDisplay" class="price-display">Selected Tier Price: <span>$0.00</span></p>
+    
+                <label for="membership">Membership Plan:</label>
+                <select id="membership" name="membership">
+                    <option value="">-- Select a Plan --</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="annual">Annual</option>
+                </select>
+                <p id="planPriceDisplay" class="price-display">Selected Plan Price: <span>$0.00</span></p>
+    
+                <fieldset>
+                    <label for="shortTerm">Short-Term Membership:</label>
+                    <select id="shortTerm" name="shortTerm">
+                        <option value="">-- Select an Option --</option>
+                        <option value="daily">Daily - $9.99</option>
+                        <option value="weekly">Weekly - $29.99</option>
+                    </select>
+                    <p id="shortTermPriceDisplay" class="price-display">Selected Short-Term Price: <span>$0.00</span></p>
+                </fieldset>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>    
+    <footer>
+        <p>&copy; KC Fitness | Where You Make Your Body Yours<br>
+            Contact Us: Kevin.Chu@mail.citytech.cuny.edu
+        </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

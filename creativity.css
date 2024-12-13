@@ -1,0 +1,165 @@
+/* creativity.css - Styles specific to the creativity.html page */
+
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('gym-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    min-height: 100%;  /* Ensure wrapper takes up full page height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex-grow: 1;  /* This ensures the content section grows to fill available space */
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* White text */
+    padding: 1px;
+    text-align: center; /* Centers the text */
+    font-size: 1.5em; /* Adjust size as needed */
+  }
+
+.cta-tagline {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* White text */
+    padding: 1px;
+    text-align: center;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-top: 10px; /* Adds spacing between the title and the tagline */
+}
+
+main.creativity {
+    padding: 20px;
+    text-align: center;
+}
+
+.slideshow {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.slideshow img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slideshow p {
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slideshow-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.slideshow-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slideshow-buttons button:hover {
+    background: #555;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.radio-button-container {
+    position: sticky; /* Keeps it fixed until the footer is reached */
+    top: 0; /* Makes it stick to the top of the viewport once it reaches the space below testimonials */
+    margin-top: 20px; /* Adds space between the testimonials and the button */
+    z-index: 10; /* Ensures the button stays above other content */
+    padding: 0px 0;
+    text-align: center; /* Centers the button horizontally */
+}
+
+  .radio-button-container button {
+    padding: 10px 20px; /* Adds some padding for a larger button */
+    font-size: 1.2em; /* Adjust the font size */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 5px; /* Optional: Adds rounded corners to the button */
+    background-color: white; /* Dark background for the button */
+    color: black; /* White text */
+    border: none; /* Removes the default border */
+  }
+
+  .radio-button-container input[type="radio"] {
+    margin-right: 10px; /* Space between the radio button and text */
+  }  
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC Fitness</title>
+    <link rel="stylesheet" href="index.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAQrVLlehCHyoteVS2lKEk2q3UZyvXYb4&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <style>
+      gmp-map {
+        height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="gymlogo.png" alt="Gym Logo" class="logo">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="creativity.html">Testimonials</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to KC Fitness</h1>
+        <p>Your body is a temple. Let us help you take care of it.</p>
+        <p class="cta">Join today and achieve your fitness goals!</p>
+      </div>
+    </div>
+
+    <!-- Mission Statement Section -->
+    <section id="about-us">
+        <div class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            At KC Fitness, we believe in empowering individuals to take charge of their health and well-being. 
+            Our state-of-the-art facilities and supportive community are here to help you every step of the way.
+        </p>
+        </div>
+    </section>
+  
+
+    <!-- Google Maps Section -->
+    <section id="map-section">
+        <h2>Visit Us at KC Fitness</h2>
+        <p>Find us in the heart of Downtown Brooklyn, New York City.</p>
+        <div id="map">
+            <img src="mapmarker.png" alt="Map showing KC Fitness location">
+        </div>
+    </section>
+    
+
+    <!-- Membership Table Section -->
+    <section id="membership-pricing">
+        <h2>Membership Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Membership Tier</th>
+                    <th>Plan</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>Monthly</td>
+                    <td>$19.99</td>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>Annually</td>
+                    <td>$239.88</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>Monthly</td>
+                    <td>$49.99</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>Annually</td>
+                    <td>$599.88</td>
+                </tr>
+                <tr>
+                    <td>Ultimate</td>
+                    <td>Monthly</td>
+                    <td>$99.99</td>
+                </tr>
+                <tr>
+                    <td>Ultimate</td>
+                    <td>Annually</td>
+                    <td>$1199.88</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+      <p>&copy; KC Fitness | Where You Make Your Body Yours<br>
+        Contact Us: Kevin.Chu@mail.citytech.cuny.edu
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+/* Membership.css - Styles specific to the membership.html page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('gym-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.title-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* To contrast with the background */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 40px; /* Adjust for consistent size */
+    width: auto;
+    margin-right: auto; /* Push the rest of the navbar content to the right */
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.call-to-action {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* White text */
+    padding: 15px;
+    text-align: center; /* Centers the text */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    border-radius: 5px; /* Optional: makes the box corners rounded */
+  }  
+
+#membership-pricing {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#membership-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#membership-pricing th, #membership-pricing td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#membership-pricing th {
+    background-color: #333;
+    color: white;
+}
+
+/* Countdown Section Styling */
+.countdown-container {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px; /* Inner padding */
+    margin: 20px auto; /* Center alignment */
+    max-width: 600px; /* Limit the width */
+    text-align: center; /* Center-align the text */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.countdown-container h2 {
+    font-size: 1.8rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Add spacing below */
+    color: #222; /* Darker text color for contrast */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+.countdown-container p {
+    font-size: 1.2rem; /* Slightly smaller for description */
+    margin-bottom: 20px; /* Add spacing below */
+    color: #555; /* Subtle text color */
+    font-weight: 500; /* Medium weight */
+}
+
+/* Countdown Timer Numbers */
+#timer {
+    font-size: 2rem; /* Make the numbers larger */
+    font-weight: bold; /* Bold text for emphasis */
+    color: red; /* Bright red text for the timer values */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add spacing between time units */
+}
+
+#timer span {
+    display: inline-block;
+    background: #fff; /* White background */
+    padding: 10px 15px; /* Add padding around numbers */
+    border: 2px solid red; /* Red border to match text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#timer span:not(:last-child)::after {
+    content: ":"; /* Add colons between numbers */
+    margin-left: 5px; /* Spacing after colon */
+    color: red; /* Same red color as the text */
+    font-size: 1.5rem; /* Slightly smaller size for colons */
+    font-weight: bold; /* Bold colon */
+}
+
+
+/* Membership Form */
+.membership-form-section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.membership-form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background: white; /* White background for the form box */
+    border: 2px solid #ddd; /* Light border for form container */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add spacing inside the form box */
+    margin: 20px auto; /* Center the form box on the page */
+    max-width: 600px; /* Set a maximum width for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text inside the form box */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
